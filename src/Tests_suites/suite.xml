@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke tests" parallel="methods" thread-count="2">
+    <test name = "Test Orders in testNG" preserve-order="true">
+        <classes>
+            <class name="tests.Lesson4.OrderTEst">
+                <methods>
+                    <include name="test5"/>
+                    <include name="test2"/>
+                    <include name="test4"/>
+                </methods>
+            </class>
+            <class name="tests.Lesson4.DataProviderTest"/>
+        </classes>
+
+    </test>
+
+    <!--   <test name = "Test Data Provider">
+         <classes>
+              <class name="tests.Lesson4.DataProviderTest">
+                  <methods>
+
+                  </methods>
+              </class>
+          </classes>
+
+      </test> -->
+
+
+
+</suite>
